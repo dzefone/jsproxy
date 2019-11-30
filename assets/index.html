@@ -34,7 +34,7 @@
   <div class="box">
     <button id="btnGo">Go</button>
   </div>
-  <div class="box" id="list">
+  <div class="box" id="sitelist">
   </div>
   <script>
     const PAGE_CONF_SET = 110
@@ -117,7 +117,7 @@
     ]
 
     function showIcons() {
-      list.innerHTML = SITE_LIST.map(v => {
+      sitelist.innerHTML = SITE_LIST.map(v => {
         let [id, url] = v
         url = url || `www.${id}.com/`
         return `\
